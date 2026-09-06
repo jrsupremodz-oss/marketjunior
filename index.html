@@ -3,34 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page AIDA - Producto</title>
+  <title>Irrigador Dental Portátil WaterJet Pro™</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     /* =================================================================
-       🔴 EDITAR AQUÍ: PALETA DE COLORES PRINCIPALES DE TU MARCA
-       =================================================================
-       Cambia los códigos HEX (ej. #27ae60) para adaptar toda la página 
-       a otros productos con diferentes colores corporativos.
-    ================================================================= */
+       🔴 PALETA DE COLORES PRINCIPALES DE TU MARCA (AZUL PROFESIONAL)
+       ================================================================= */
     :root {
-      /* 🔴 COLOR PRINCIPAL (Verdes, botones, íconos de verificación, bordes) */
-      --color-primary: #27ae60;
+      /* 🔵 COLOR PRINCIPAL (Azul Dental / Botones, íconos de verificación, bordes) */
+      --color-primary: #0284c7;
 
-      /* 🔴 COLOR PRINCIPAL GRADIENTE DE GARANTÍA Y BLOQUES */
-      --color-primary-dark: #219653;
+      /* 🔵 COLOR PRINCIPAL GRADIENTE DE GARANTÍA Y BLOQUES */
+      --color-primary-dark: #0369a1;
 
-      /* 🔴 COLOR DE PRECIO EN OFERTA / DESCUENTOS */
-      --color-price-discount: #27ae60;
+      /* 🔵 COLOR DE PRECIO EN OFERTA / DESCUENTOS */
+      --color-price-discount: #0284c7;
 
       /* 🔴 COLOR DE ALERTAS / PRECIO ANTERIOR / CONTADOR */
       --color-alert: #d32f2f;
       --color-price-old: #888888;
 
-      /* 🔴 FONDO Y TEXTO DEL BLOQUE "POR QUÉ LO NECESITAS HOY" */
-      --color-green-section-bg: #27ae60;
-      --color-green-section-text: #ffffff;
+      /* 🔵 FONDO Y TEXTO DEL BLOQUE "POR QUÉ LO NECESITAS HOY" */
+      --color-blue-section-bg: #0284c7;
+      --color-blue-section-text: #ffffff;
 
-      /* 🔴 COLOR DE ESTRELLAS Y DETALLES DESTACADOS */
+      /* ⭐ COLOR DE ESTRELLAS Y DETALLES DESTACADOS */
       --color-star: #f39c12;
     }
 
@@ -233,7 +230,7 @@
       padding: 24px 20px;
     }
     .review-quote-box {
-      background: #f9fbf9;
+      background: #f0f9ff;
       border-left: 4px solid var(--color-primary);
       padding: 16px;
       border-radius: 6px;
@@ -246,7 +243,7 @@
       font-weight: 700;
       font-size: 13px;
       margin-top: 10px;
-      color: #666;
+      color: #555;
     }
 
     /* ACORDEONES DESPLEGABLES */
@@ -284,25 +281,25 @@
     }
     .accordion-body.open {
       padding-bottom: 16px;
-      max-height: 300px;
+      max-height: 350px;
     }
 
-    /* SECCIÓN DE DESEO (CARTA VERDE Y MÉTRICAS) */
-    .desire-green-box {
-      background-color: var(--color-green-section-bg);
-      color: var(--color-green-section-text);
+    /* SECCIÓN DE DESEO (CARTA AZUL Y MÉTRICAS) */
+    .desire-blue-box {
+      background-color: var(--color-blue-section-bg);
+      color: var(--color-blue-section-text);
       border-radius: 18px;
       padding: 26px 20px;
       margin: 22px 0;
-      box-shadow: 0 6px 20px rgba(39, 174, 96, 0.25);
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
     }
-    .green-box-title {
+    .blue-box-title {
       font-size: 22px;
       font-weight: 900;
       text-align: center;
       margin-bottom: 20px;
     }
-    .green-card-item {
+    .blue-card-item {
       background: rgba(255, 255, 255, 0.16);
       backdrop-filter: blur(5px);
       border-radius: 14px;
@@ -310,15 +307,37 @@
       margin-bottom: 14px;
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
-    .green-card-item h3 {
+    .blue-card-item h3 {
       font-size: 15.5px;
       margin-bottom: 6px;
       font-weight: 800;
     }
-    .green-card-item p {
+    .blue-card-item p {
       font-size: 13px;
       opacity: 0.95;
       line-height: 1.5;
+    }
+
+    /* BLOQUE INFORMATIVO DE 3 PASOS */
+    .steps-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .steps-box h3 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .steps-box p {
+      font-size: 13.5px;
+      color: #334155;
+      line-height: 1.6;
+      text-align: center;
     }
 
     /* PRUEBA SOCIAL / STATS */
@@ -396,7 +415,7 @@
       padding: 22px 18px;
       border-radius: 14px;
       margin-top: 24px;
-      box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
     }
     .guarantee-card h3 {
       font-size: 18px;
@@ -409,9 +428,7 @@
       line-height: 1.5;
     }
 
-    /* =================================================================
-       CARRUSEL DE COMENTARIOS / RESEÑAS SLIDER (TAMAÑO MANTENIDO)
-       ================================================================= */
+    /* CARRUSEL DE COMENTARIOS / RESEÑAS SLIDER */
     .comments-section-title {
       font-size: 22px;
       font-weight: 900;
@@ -426,10 +443,10 @@
       gap: 16px;
       padding: 10px 4px 20px 4px;
       -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; /* Firefox */
+      scrollbar-width: none;
     }
     .reviews-slider-wrapper::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+      display: none;
     }
     .review-card {
       min-width: 82%;
@@ -444,10 +461,6 @@
       flex-shrink: 0;
     }
     
-    /* IMÁGENES DE LOS COMENTARIOS:
-       Mantienen un alto uniforme (240px) y corte limpio (object-fit: cover)
-       para que la sección se vea completamente simétrica y pareja.
-    */
     .review-card-img-wrap {
       position: relative;
       width: 100%;
@@ -461,7 +474,7 @@
       object-fit: cover !important;
       border-radius: 20px 20px 0 0;
     }
-    .quote-badge-green {
+    .quote-badge-blue {
       position: absolute;
       bottom: -18px;
       right: 18px;
@@ -474,7 +487,7 @@
       align-items: center;
       justify-content: center;
       font-size: 22px;
-      box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+      box-shadow: 0 4px 10px rgba(2, 132, 199, 0.4);
       z-index: 2;
     }
     .review-card-body {
@@ -550,7 +563,7 @@
       opacity: 0.8;
     }
 
-    /* 5. SECCIÓN DE ACCIÓN - BOTÓN FLOTANTE SHAKE */
+    /* SECCIÓN DE ACCIÓN - BOTÓN FLOTANTE SHAKE */
     .floating-bar-container {
       position: fixed;
       bottom: 0;
@@ -597,7 +610,7 @@
     }
     .cta-sub-text {
       font-size: 12px;
-      color: #2ecc71;
+      color: #38bdf8;
       font-weight: 700;
       margin-top: 2px;
     }
@@ -627,7 +640,7 @@
 <div class="page-wrapper">
 
   <!-- =================================================================
-       🔴 EDITAR AQUÍ: PRIMER BANNER SLIDER SUPERIOR (OFERTAS Y ENVÍO)
+       🔴 BANNERS SLIDER SUPERIOR (OFERTAS Y ENVÍO)
        ================================================================= -->
   <div class="marquee-container">
     <div class="marquee-track">
@@ -644,73 +657,63 @@
 
   <!-- NAVBAR CON LOGO CENTRADO -->
   <div class="navbar">
-    <!-- 🔴 EDITAR AQUÍ: NOMBRE DE TU TIENDA/MARCA -->
     <div class="brand-title">Market Junior</div>
   </div>
 
-  <!-- =================================================================
-       🔴 EDITAR AQUÍ: SEGUNDO BANNER SLIDER NEGRO (SEPTIEMBRE DE OFERTA)
-       ================================================================= -->
+  <!-- SEGUNDO BANNER SLIDER NEGRO -->
   <div class="marquee-container">
     <div class="marquee-track-fast">
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
 
       <!-- Copia duplicada para animación fluida -->
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
-      <span>🔥 SEPTIEMBRE DE OFERTAAA!!! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
+      <span>🔥 OFERTA ESPECIAL DE LANZAMIENTO! ❤️✨</span>
     </div>
   </div>
 
   <!-- =================================================================
-       🔴 EDITAR AQUÍ: SECCIÓN 1 - ATENCIÓN (HERO, OFERTA Y CONTADOR)
+       🔴 SECCIÓN 1 - ATENCIÓN (HERO, OFERTA Y CONTADOR)
        ================================================================= -->
   <div class="hero-content">
 
-    <!-- Imagen Principal del Producto (Totalmente adaptable) -->
-    <!-- 🔴 EDITAR URL DE LA IMAGEN EN src="..." -->
-    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Corrector de Pies Pro]" class="product-hero-img">
+    <!-- Imagen Principal del Producto (Modificable por el usuario) -->
+    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Irrigador Dental Portátil WaterJet Pro]" class="product-hero-img">
 
     <!-- Valoración y Estrellas -->
-    <!-- 🔴 EDITAR VALORACIÓN Y CLIENTES -->
     <div class="reviews-summary">
-      <span class="stars">⭐⭐⭐⭐⭐</span> Valoración 4.8/5 (10,000+ Clientes Satisfechos)
+      <span class="stars">⭐⭐⭐⭐⭐</span> Valoración 4.9/5 (15,000+ Clientes Satisfechos)
     </div>
 
-    <!-- Título Principal Impactante (Promesa/Dolor) -->
-    <!-- 🔴 EDITAR TÍTULO DEL PRODUCTO -->
+    <!-- Título Principal Impactante -->
     <h1 class="main-heading">
-      👋 ¡Di Adiós al Dolor de Pies y Hola a la Comodidad Total! Con Los Correctores Calcetines Pro.
+      Irrigador Dental Portátil WaterJet Pro™ – Limpieza Profunda y Sonrisa Radiante en 1 Minuto
     </h1>
 
     <!-- Bloque de Precios -->
     <div class="pricing-area">
-      <!-- 🔴 EDITAR PRECIO ANTERIOR (TACHADO) Y PRECIO DE OFERTA -->
-      <span class="price-original">$138.000,00</span>
-      <span class="price-discount">$69.900,00</span>
+      <span class="price-original">$199.000,00</span>
+      <span class="price-discount">$99.900,00</span>
     </div>
 
     <!-- Bullets de Beneficios Clave -->
-    <!-- 🔴 EDITAR BENEFICIOS CORTOS -->
     <ul class="key-bullets">
-      <li>👣 <span><b>Alivio Instantáneo del Dolor:</b> Vuelve a caminar sin molestias.</span></li>
-      <li>💖 <span><b>Pies Más Bonitos y Alineados:</b> Recupera la forma natural de tus pies.</span></li>
-      <li>🌙 <span><b>Noches de Descanso Reparador:</b> Duerme sin el fastidio de los juanetes.</span></li>
+      <li>🦩 <span><b>Sonrisa impecable y fresca:</b> Siéntete limpio y seguro todo el día.</span></li>
+      <li>🐬 <span><b>Dientes limpios sin hilos ni dolor:</b> Elimina restos en segundos sin lastimar.</span></li>
+      <li>🦥 <span><b>Encías sanas:</b> Disfruta de una frescura deslumbrante en cada uso.</span></li>
     </ul>
 
     <!-- CONTADOR REVERSIVO DE URGENCIA -->
     <div class="timer-card">
-      <!-- 🔴 EDITAR TEXTO DEL TITULO DEL CONTADOR -->
       <div class="timer-card-title">Date prisa, la oferta termina en</div>
       <div class="timer-digits" id="countdown-timer">09:59</div>
     </div>
 
     <!-- BADGES DE CONFIANZA -->
-    <!-- 🔴 EDITAR BADGES DE CONFIANZA -->
     <div class="trust-grid">
       <div>
         <div class="trust-item-icon">🚚</div>
@@ -718,7 +721,7 @@
       </div>
       <div>
         <div class="trust-item-icon">🛡️</div>
-        <div class="trust-item-text">20 Días de Garantía</div>
+        <div class="trust-item-text">30 Días de Garantía</div>
       </div>
       <div>
         <div class="trust-item-icon">💬</div>
@@ -729,38 +732,35 @@
   </div>
 
   <!-- =================================================================
-       🔴 EDITAR AQUÍ: SECCIÓN 2 - INTERÉS (TESTIMONIO Y ACORDEONES)
+       🔴 SECCIÓN 2 - INTERÉS (TESTIMONIO Y ACORDEONES)
        ================================================================= -->
   <div class="section-block">
     
     <!-- Testimonio destacado -->
-    <!-- 🔴 EDITAR CITA DE TESTIMONIO Y AUTOR -->
     <div class="review-quote-box">
-      "El protector de juanete es un salvavidas. Puedo usar mis zapatos favoritos sin sentir ese roce horrible. ¡Mis pies están mucho más felices ahora!"
-      <div class="review-quote-author">Andrés M., Bogotá ⭐⭐⭐⭐⭐</div>
+      "¡Increíble cambio en mi rutina! Deja una sensación de limpieza profunda tan agradable que ya no puedo viajar sin él."
+      <div class="review-quote-author">Valeria M., Barranquilla ⭐⭐⭐⭐⭐</div>
     </div>
 
-    <!-- Imagen Secundaria de Demostración del Producto (Totalmente adaptable) -->
-    <!-- 🔴 EDITAR URL DE LA IMAGEN EN src="..." -->
-    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Demostración de Uso]" style="margin-bottom: 20px;">
+    <!-- Imagen Secundaria de Demostración del Producto -->
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Demostración de Uso WaterJet Pro]" style="margin-bottom: 20px;">
 
     <!-- ACORDEONES DESPLEGABLES -->
-    <!-- 🔴 EDITAR PREGUNTAS Y RESPUESTAS DEL ACORDEÓN DE DETALLES -->
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
         🤔 ¿Cómo Funciona? <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        Simplemente elige la pieza que mejor se adapte a tu necesidad (protector para el día, corrector para la noche o separador discreto), deslízalo sobre el dedo o pie y ajústalo para que se sienta cómodo. Úsalo mientras trabajas, caminas o duermes para una corrección continua.
+        Llene el depósito de 200 ml con agua tibia y elija una de las 4 boquillas incluidas según sus necesidades. Seleccione el nivel de presión deseado, apunte entre los dientes y encienda la unidad para eliminar suavemente los restos de comida. Úselo durante un minuto al día para disfrutar de una limpieza profunda e instantánea.
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
-        💖 Nuestra Garantía <span class="icon">▼</span>
+        💖 Nuestra Garantía de 30 Días <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        Ofrecemos una garantía de satisfacción total por 20 días. Si tu producto presenta defectos de fábrica o no cumple con tus expectativas, nos contactas y te enviamos una solución inmediata.
+        Pruébalo totalmente libre de riesgo durante 30 días. Si no estás 100% satisfecho con los resultados y la frescura de tu sonrisa, te devolvemos la totalidad de tu dinero sin preguntas.
       </div>
     </div>
 
@@ -768,7 +768,7 @@
       <button class="accordion-btn" onclick="toggleAccordion(this)">
         🚚 Tiempos de Envíos <span class="icon">▼</span>
       </button>
-      <div class="accordion-content accordion-body">
+      <div class="accordion-body">
         Despachamos tu pedido en menos de 24 horas hábiles. La entrega demora entre 2 y 4 días según tu ciudad en todo el país. ¡Recuerda que pagas cuando recibes en tu hogar!
       </div>
     </div>
@@ -776,106 +776,114 @@
   </div>
 
   <!-- =================================================================
-       🔴 EDITAR AQUÍ: SECCIÓN 3 - DESEO (CARTA VERDE, STATS Y TABLA)
+       🔴 SECCIÓN 3 - DESEO (CARTA AZUL, STATS Y TABLA)
        ================================================================= -->
   <div class="section-block" style="padding-top: 0;">
     
-    <!-- Imagen del Secreto o Tecnología del Producto (Totalmente adaptable) -->
-    <!-- 🔴 EDITAR URL DE LA IMAGEN EN src="..." -->
-    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Anatomía y Alineación de Pie]" style="margin-bottom: 20px;">
+    <!-- Imagen del Secreto o Tecnología del Producto -->
+    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="[Imagen de Tecnología WaterJet Pro]" style="margin-bottom: 20px;">
 
     <!-- Título de Sección de Deseo -->
-    <!-- 🔴 EDITAR TITULO Y DESCRIPCIÓN -->
     <h2 style="text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 12px;">
-      💖 El Secreto para Pies Alineados y Sin Dolor
+      Transforma tu sonrisa con la máxima limpieza en casa
     </h2>
     <p style="text-align: center; font-size: 13.5px; color: #555; margin-bottom: 20px;">
-      Recuperar la salud y la belleza de tus pies no tiene por qué ser complicado. Nuestra tecnología de soporte ergonómico está diseñada para atacar la raíz del problema, devolviendo a tus dedos su posición natural.
+      Experimenta una sensación de frescura inigualable eliminando los residuos que el cepillo tradicional suele pasar por alto. Este irrigador portátil utiliza chorros de agua de alta precisión para cuidar tus encías y mantener tus dientes impecables en segundos. Es el aliado perfecto para lucir una sonrisa radiante y cuidada desde la comodidad de tu hogar.
     </p>
 
-    <!-- BLOQUE VERDE DE CARACTERÍSTICAS ("Por qué lo necesitas HOY") -->
-    <!-- 🔴 EDITAR BLOQUE VERDE Y SUS TARJETAS -->
-    <div class="desire-green-box">
-      <div class="green-box-title">Por qué lo necesitas HOY</div>
+    <!-- BLOQUE AZUL DE CARACTERÍSTICAS ("Por qué lo necesitas HOY") -->
+    <div class="desire-blue-box">
+      <div class="blue-box-title">Por qué lo necesitas HOY</div>
 
-      <div class="green-card-item">
-        <h3>Alivio Profundo y Duradero del Dolor</h3>
-        <p>Olvídate de la punzada constante del juanete o la irritación de los dedos superpuestos. Nuestros correctores acolchan y separan suavemente, eliminando los puntos de presión.</p>
+      <div class="blue-card-item">
+        <h3>Limpieza profunda entre dientes</h3>
+        <p>Su chorro a presión llega a los rincones más inaccesibles eliminando restos de comida al instante. Protege el esmalte mientras garantiza un aliento fresco durante todo el día.</p>
       </div>
 
-      <div class="green-card-item">
-        <h3>Alineación Progresiva para Pies Saludables</h3>
-        <p>Fomenta la corrección gradual de dedos torcidos sin necesidad de cirugías invasivas. Úsalos de manera constante y nota cómo tus pies recuperan una forma estética y agradable.</p>
+      <div class="blue-card-item">
+        <h3>Cuidado delicado para encías</h3>
+        <p>Masajea suavemente el tejido bucal estimulando la circulación sin causar molestias. Es ideal para personas con sensibilidad o inflamaciones frecuentes.</p>
       </div>
 
-      <div class="green-card-item">
-        <h3>Comodidad Discreta Bajo Cualquier Calzado</h3>
-        <p>Fabricados con materiales suaves y flexibles, tan delgados que puedes usarlos con tenis, botas o incluso con algunos tacones de forma imperceptible.</p>
+      <div class="blue-card-item">
+        <h3>Diseño portátil y boquillas especializadas</h3>
+        <p>Incluye 4 boquillas intercambiables y una batería recargable por USB de larga duración. Podrás llevar tu rutina de higiene completa a cualquier viaje o lugar de trabajo.</p>
       </div>
     </div>
 
+    <!-- PASOS SIMPLES -->
+    <div class="steps-box">
+      <h3>Tres sencillos pasos para una frescura absoluta</h3>
+      <p>Solo necesitas llenar el tanque con agua, colocar la boquilla adecuada y presionar el botón de encendido. Ajusta la intensidad a tu gusto y desliza el chorro a lo largo de la línea de las encías. En solo un minuto habrás completado una limpieza superior que dejará tu boca impecable.</p>
+    </div>
+
     <!-- PRUEBA SOCIAL / PORCENTAJES Y MÉTRICAS -->
-    <!-- 🔴 EDITAR PORCENTAJES Y TEXTOS DE RESULTADOS -->
-    <h3 style="font-size: 18px; font-weight: 800; margin: 26px 0 16px; text-align: center;">
-      📈 Resultados Reales de Nuestros Clientes
+    <h3 style="font-size: 18px; font-weight: 800; margin: 26px 0 8px; text-align: center;">
+      📈 Resultados comprobados que respaldan la diferencia
     </h3>
+    <p style="text-align: center; font-size: 12.5px; color: #666; margin-bottom: 18px;">
+      Evaluamos nuestro irrigador portátil con cientos de usuarios para medir su impacto directo en la rutina diaria.
+    </p>
 
     <div class="stat-card">
       <div class="stat-circle">94%</div>
-      <div class="stat-text">Dijo que <b>sintió alivio del dolor</b> en la primera semana de uso.</div>
+      <div class="stat-text">Dijo que <b>notó sus dientes visiblemente más limpios y suaves</b> desde el primer día.</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-circle">97%</div>
+      <div class="stat-text">Dijo que <b>le resulta mucho más fácil de usar</b> que el hilo dental convencional.</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-circle">96%</div>
-      <div class="stat-text">Dijo que los productos son <b>cómodos para usar durante todo el día</b>.</div>
+      <div class="stat-text">Dijo que <b>experimentó una sensación de aliento fresco</b> durante más tiempo.</div>
     </div>
 
-    <div class="stat-card">
-      <div class="stat-circle">95%</div>
-      <div class="stat-text">Dijo que <b>recomendaría este par a un amigo</b> con problemas en los pies.</div>
-    </div>
-
-    <!-- 🔴 EDITAR AQUÍ: NUEVA IMAGEN ADAPTABLE ARRIBA DE LA TABLA COMPARATIVA -->
+    <!-- IMAGEN ARRIBA DE LA TABLA COMPARATIVA -->
     <div style="margin: 30px 0 10px 0;">
-      <!-- Reemplaza la URL en src="..." con la foto que desees -->
-      <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80" alt="[Imagen Comparativa o Informativa arriba de Tabla]" style="width: 100%; height: auto;">
+      <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=800&q=80" alt="[Imagen Comparativa o Informativa arriba de Tabla]" style="width: 100%; height: auto;">
     </div>
 
     <!-- TABLA COMPARATIVA DE PRODUCTO -->
-    <!-- 🔴 EDITAR FILAS DE LA TABLA COMPARATIVA -->
     <h3 style="font-size: 18px; font-weight: 800; margin: 20px 0 12px; text-align: center;">
       Tabla de Comparación
     </h3>
     <p style="text-align: center; font-size: 12.5px; color: #666; margin-bottom: 14px;">
-      Nuestros Par de calcetines Pro se diferencia del Resto...
+      Nuestro Irrigador WaterJet Pro™ se diferencia del resto...
     </p>
 
     <table class="comparison-table">
       <thead>
         <tr>
           <th>Beneficio</th>
-          <th>PRO</th>
-          <th>Otros</th>
+          <th>WaterJet Pro™</th>
+          <th>Hilo Tradicional</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Separador y Corrector de Dedos / Juanetes</td>
+          <td>Limpieza profunda con chorro a presión en 1 min</td>
           <td class="icon-check">✓</td>
           <td class="icon-cross">✕</td>
         </tr>
         <tr>
-          <td>Protector y Regulador de Juanetes</td>
+          <td>4 Boquillas intercambiables personalizadas</td>
           <td class="icon-check">✓</td>
           <td class="icon-cross">✕</td>
         </tr>
         <tr>
-          <td>Calcetines de Cuidado y Recuperación</td>
+          <td>Apto para brackets, implantes y encías sensibles</td>
           <td class="icon-check">✓</td>
           <td class="icon-cross">✕</td>
         </tr>
         <tr>
-          <td>Cómodo Uso diario con Manga Ajustable</td>
+          <td>Cuidado delicado sin sangrado ni molestias</td>
+          <td class="icon-check">✓</td>
+          <td class="icon-cross">✕</td>
+        </tr>
+        <tr>
+          <td>Batería USB recargable de hasta 21 días</td>
           <td class="icon-check">✓</td>
           <td class="icon-cross">✕</td>
         </tr>
@@ -883,16 +891,15 @@
     </table>
 
     <!-- BANNER DE GARANTÍA DESTACADO -->
-    <!-- 🔴 EDITAR TEXTO DE GARANTÍA -->
     <div class="guarantee-card">
-      <h3>Garantía de Satisfacción 20 Días!</h3>
+      <h3>Garantía de Satisfacción 30 Días!</h3>
       <p>
-        Estamos tan seguros de que amarás los resultados que te ofrecemos una Garantía de Satisfacción Total de 20 días. Si no estás completamente feliz con tus Calcetines PRO, contáctanos y resolvemos tu caso inmediatamente.
+        Pruébalo totalmente libre de riesgo durante 30 días. Si no estás 100% satisfecho con los resultados y la frescura de tu sonrisa, te devolvemos la totalidad de tu dinero sin preguntas.
       </p>
     </div>
 
     <!-- =================================================================
-         🔴 EDITAR AQUÍ: SECCIÓN DE COMENTARIOS / RESEÑAS DESLIZABLES
+         🔴 SECCIÓN DE COMENTARIOS / RESEÑAS DESLIZABLES
          ================================================================= -->
     <h2 class="comments-section-title">Comentarios</h2>
     <div class="slider-hint">👈 Desliza para ver más opiniones 👉</div>
@@ -900,120 +907,126 @@
     <div class="reviews-slider-wrapper">
 
       <!-- TARJETA COMENTARIO 1 -->
-      <!-- 🔴 EDITAR FOTO, TEXTO, TITULO Y NOMBRE -->
       <div class="review-card">
         <div class="review-card-img-wrap">
-          <!-- 🔴 EDITAR URL DE LA IMAGEN DEL CLIENTE/PRODUCTO EN src="..." -->
-          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 1]">
-          <div class="quote-badge-green">❞</div>
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 1]">
+          <div class="quote-badge-blue">❞</div>
         </div>
         <div class="review-card-body">
           <div class="review-card-stars">⭐⭐⭐⭐⭐</div>
-          <div class="review-card-headline">¡Excelente producto!</div>
+          <div class="review-card-headline">¡Increíble cambio en mi rutina!</div>
           <p class="review-card-text">
-            "Llevaba años sufriendo y la férula nocturna ha cambiado mi vida. Me levanto sin la rigidez habitual. ¡Una compra obligatoria!"
+            "Deja una sensación de limpieza profunda tan agradable que ya no puedo viajar sin él. Súper recomendado."
           </p>
-          <div class="review-card-author">Ana Paula Martin</div>
+          <div class="review-card-author">Valeria M., Barranquilla</div>
         </div>
       </div>
 
       <!-- TARJETA COMENTARIO 2 -->
-      <!-- 🔴 EDITAR FOTO, TEXTO, TITULO Y NOMBRE -->
       <div class="review-card">
         <div class="review-card-img-wrap">
-          <!-- 🔴 EDITAR URL DE LA IMAGEN DEL CLIENTE/PRODUCTO EN src="..." -->
-          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 2]">
-          <div class="quote-badge-green">❞</div>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 2]">
+          <div class="quote-badge-blue">❞</div>
         </div>
         <div class="review-card-body">
           <div class="review-card-stars">⭐⭐⭐⭐⭐</div>
-          <div class="review-card-headline">¡Increíble alivio!</div>
+          <div class="review-card-headline">¡Mis encías ya no sangran!</div>
           <p class="review-card-text">
-            "Puedo salir a caminar y usar mis zapatos de trabajo todo el día sin ese dolor insoportable. Llegaron muy rápido y el pago en casa fue facilísimo."
+            "El hilo dental me lastimaba mucho. Con este irrigador la limpieza es súper rápida, suave y efectiva. Batería excelente."
           </p>
-          <div class="review-card-author">Carlos Eduardo R.</div>
+          <div class="review-card-author">Camilo S., Medellín</div>
         </div>
       </div>
 
       <!-- TARJETA COMENTARIO 3 -->
-      <!-- 🔴 EDITAR FOTO, TEXTO, TITULO Y NOMBRE -->
       <div class="review-card">
         <div class="review-card-img-wrap">
-          <!-- 🔴 EDITAR URL DE LA IMAGEN DEL CLIENTE/PRODUCTO EN src="..." -->
-          <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 3]">
-          <div class="quote-badge-green">❞</div>
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="[Foto de Cliente 3]">
+          <div class="quote-badge-blue">❞</div>
         </div>
         <div class="review-card-body">
           <div class="review-card-stars">⭐⭐⭐⭐⭐</div>
-          <div class="review-card-headline">¡Súper recomendados!</div>
+          <div class="review-card-headline"> Perfecta para ortodoncia</div>
           <p class="review-card-text">
-            "La tela es muy suave y no molesta para nada. Compré 2 pares para regalar a mi mamá y ambas estamos encantadas con los resultados."
+            "Tengo brackets y limpiar la comida era súper difícil. La boquilla de ortodoncia es una maravilla. 100% recomendado."
           </p>
-          <div class="review-card-author">Sonia M. Restrepo</div>
+          <div class="review-card-author">Andrea P., Bogotá</div>
         </div>
       </div>
 
     </div>
 
     <!-- =================================================================
-         🔴 EDITAR AQUÍ: PREGUNTAS FRECUENTES (FAQ)
+         🔴 PREGUNTAS FRECUENTES (FAQ)
          ================================================================= -->
     <h3 style="font-size: 18px; font-weight: 800; margin: 32px 0 16px; text-align: center;">
       ❓ Preguntas Frecuentes
     </h3>
 
-    <!-- 🔴 EDITAR O AGREGAR PREGUNTAS FRECUENTES -->
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
-        ¿Cómo funciona el pago contra entrega? <span class="icon">▼</span>
+        ¿Es apto si tengo brackets, implantes o encías sensibles? <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        Es muy fácil y seguro. Haces el pedido en esta página y cuando la transportadora llegue a tu casa u oficina, le entregas el dinero en efectivo al repartidor.
+        Sí, está diseñado para limpiar alrededor de ortodoncias, coronas e implantes sin engancharse. Sus niveles de presión ajustables permiten adaptar la intensidad para cuidar adecuadamente las encías sensibles.
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
-        ¿Vienen por par o individual? <span class="icon">▼</span>
+        ¿Cuánto dura la batería recargable por USB? <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        El paquete incluye el kit completo para ambos pies (izquierdo y derecho) para que puedas realizar tu tratamiento de forma simétrica.
+        Una sola carga completa puede durar hasta 21 días de uso continuo utilizándolo diariamente. Puedes recargarlo fácilmente con cualquier cable USB conectado a tu ordenador, vehículo o cargador móvil.
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
-        ¿Qué talla debo pedir? <span class="icon">▼</span>
+        ¿Para qué sirven las 4 boquillas incluidas? <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        Es talla única adaptable. Gracias a su tela de fibra spandex elástica, se adapta cómodamente a calzados desde la talla 34 hasta la 43.
+        El kit incluye boquillas diseñadas para la limpieza estándar diaria, el cuidado de ortodoncia, la higiene lingual y el acceso periodontal. Esto te permite personalizar tu rutina de acuerdo a tus necesidades específicas.
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-btn" onclick="toggleAccordion(this)">
-        ¿Puedo usarlo mientras duermo? <span class="icon">▼</span>
+        ¿Se puede usar dentro de la ducha? <span class="icon">▼</span>
       </button>
       <div class="accordion-body">
-        ¡Sí! De hecho es altamente recomendado usarlo durante el descanso nocturno, ya que los músculos del pie están relajados y la corrección actúa de manera óptima.
+        Sí, cuenta con resistencia al agua IPX7 que garantiza un uso seguro durante el baño. Puedes incorporarlo cómodamente a tu rutina de ducha sin preocuparte por filtraciones.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        ¿Es fácil de rellenar y limpiar el tanque de 200 ml? <span class="icon">▼</span>
+      </button>
+      <div class="accordion-body">
+        El depósito de agua es extraíble y cuenta con una abertura amplia para un llenado rápido. Solo debes enjuagarlo periódicamente para mantener el dispositivo en perfectas condiciones higiénicas.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">
+        ¿Sustituye completamente al cepillado tradicional? <span class="icon">▼</span>
+      </button>
+      <div class="accordion-body">
+        El irrigador actúa como el complemento ideal del cepillado, reemplazando con mayor comodidad al hilo dental tradicional. Juntos logran remover de manera eficaz la suciedad acumulada entre los dientes.
       </div>
     </div>
 
   </div>
 
   <!-- =================================================================
-       🔴 EDITAR AQUÍ: FOOTER / PIE DE PÁGINA CON POLÍTICAS
+       🔴 FOOTER / PIE DE PÁGINA CON POLÍTICAS
        ================================================================= -->
   <footer class="site-footer">
     <div class="footer-links">
-      <!-- 🔴 EDITAR URL DE POLÍTICA DE PRIVACIDAD EN href="..." -->
-      <a href="🔴 INSERTA_AQUI_URL_POLITICA_PRIVACIDAD" target="_blank">Políticas de Privacidad</a>
-      
-      <!-- 🔴 EDITAR URL DE TÉRMINOS Y CONDICIONES EN href="..." -->
-      <a href="🔴 INSERTA_AQUI_URL_TERMINOS_Y_CONDICIONES" target="_blank">Términos y Condiciones</a>
-      
-      <!-- 🔴 EDITAR URL DE POLÍTICA DE ENVÍO EN href="..." -->
-      <a href="🔴 INSERTA_AQUI_URL_POLITICA_ENVIO" target="_blank">Políticas de Envío</a>
+      <a href="#" target="_blank">Políticas de Privacidad</a>
+      <a href="#" target="_blank">Términos y Condiciones</a>
+      <a href="#" target="_blank">Políticas de Envío</a>
     </div>
     <div class="footer-copy">
       © <span id="year">2026</span> Market Junior. Todos los derechos reservados.
@@ -1023,27 +1036,17 @@
 </div> <!-- FIN DEL WRAPPER MÓVIL -->
 
 <!-- =================================================================
-     🔴 EDITAR AQUÍ: SECCIÓN 4 - ACCIÓN (BOTÓN FLOTANTE PERSEGUIDOR)
+     🔴 SECCIÓN 4 - ACCIÓN (BOTÓN FLOTANTE PERSEGUIDOR)
      ================================================================= -->
-<!-- Este botón persigue al usuario por toda la pantalla -->
 <div class="floating-bar-container">
-  
-  <!-- 
-      🔴 ¡ATENCIÓN EDITABLE DE ENLACE!:
-      Cambia el valor de href="..." por la URL completa de tu formulario o checkout.
-      Ejemplo: href="https://tutienda.com/checkout" o href="https://midominio.com/formulario"
-  -->
   <a href="https://jrsupremodz-oss.github.io/formulario/" class="floating-cta-button">
-    <!-- 🔴 EDITAR TEXTO PRINCIPAL DEL BOTÓN -->
     <span class="cta-main-text">
       🛍️ HACER PEDIDO
     </span>
-    <!-- 🔴 EDITAR SUBTEXTO DEL BOTÓN -->
     <span class="cta-sub-text">
       Paga en Casa!
     </span>
   </a>
-
 </div>
 
 <!-- =================================================================
@@ -1068,7 +1071,7 @@
   // AÑO AUTOMÁTICO PARA EL FOOTER
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // 🔴 EDITAR AQUÍ: DURACIÓN DEL CONTADOR DE TIEMPO (EN SEGUNDOS)
+  // DURACIÓN DEL CONTADOR DE TIEMPO (EN SEGUNDOS)
   let totalSeconds = 9 * 60 + 58;
 
   function runCountdown() {
